@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ID Card</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.id-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.id-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.id-card p {
+  margin: 5px 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  .container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>ID Card</h1>
+  <div class="id-card">
+    <img src="https://via.placeholder.com/100" alt="Profile Picture">
+    <p><span class="label">Nama:</span> Jhosua Putra Gultom</p>
+    <p><span class="label">Tempat, Tanggal Lahir:</span> Tangerang, 20 Juni 2004</p>
+    <p><span class="label">Umur:</span> 20 tahun</p>
+    <p><span class="label">Agama:</span> Kristen Protestan</p>
+    <p><span class="label">Alamat:</span> Gg. Melon Alam Sutera, Kel. Pakujaya, Kec. Serpong Utara, Tangerang Selatan</p>
+    <p><span class="label">Region:</span> Tangerang</p>
+    <p><span class="label">Pekerjaan:</span> Mahasiswa</p>
+  </div>
+</div>
+
+</body>
+</html>
